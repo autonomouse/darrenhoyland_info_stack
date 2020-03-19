@@ -1,0 +1,608 @@
+[
+    {
+        "section": "profile",
+        "header": "Profile",
+        "subheader": "",
+        "subsubheader": "",
+        "articles": [
+            {
+                "title": null,
+                "items": [
+                    {
+                        "type": "paragraphs",
+                        "name": "profile intro",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": null,
+                        "content": [
+                            "I am a programmer, specialising primarily in Python, but also increasingly in Javascript (Angular, React).",
+                            "My earlier work was concerned with modelling biological systems, but has more recently tended towards building web portals, microservices, RESTful APIs, automation, and building and maintaining the infrastructure behind CI/CD systems.",
+                            "I have a rigorous, methodical approach and always enjoy a good problem to solve. I have been praised for my analytical skills, expertise in Python, willingness to learn, enthusiasm, good humour, intelligence, and strong work ethic. While I am highly sociable and enjoy working around other people, I am sufficiently self-motivated to work remotely, and have done so for many years in my roles at Verne Global, Canonical, and Bitposter.",
+                            "With a cross-disciplinary background, having a doctorate in computational neuroscience and degrees in informatics and biological sciences, I have experienced a range of working environments, from a large, multinational pharmaceutical company to academia to a globally distributed team of engineers: I have worked with people from all over the world and have been lab-based, office-based and home-based.",
+                            "I currently live in North East Lincolnshire, UK, with my wife and two children. My hobbies include reading, writing science-fiction stories, and not going to the gym."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "qualifications",
+        "header": "Qualifications",
+        "subheader": "",
+        "subsubheader": "",
+        "articles": [
+            {
+                "title": null,
+                "items": [
+                    {
+                        "type": "link",
+                        "name": "PhD qualification",
+                        "prefix": "PhD in Computational Biology",
+                        "title": "University of Sheffield",
+                        "content": [
+                            "http://www.sheffield.ac.uk/"
+                        ],
+                        "suffix": "(2005-2009)"
+                    },
+                    {
+                        "type": "link",
+                        "name": "MSc qualification",
+                        "prefix": "MSc in Computation/Informatics",
+                        "title": "University of Manchester",
+                        "content": [
+                            "http://www.manchester.ac.uk/"
+                        ],
+                        "suffix": "(2004-2005)"
+                    },
+                    {
+                        "type": "link",
+                        "name": "BSc qualification",
+                        "prefix": "BSc (Hons) in Biological Sciences",
+                        "title": "University of Leicester",
+                        "content": [
+                            "http://www.leicester.ac.uk/"
+                        ],
+                        "suffix": "(1999-2002)"
+                    },
+                    {
+                        "type": "link",
+                        "name": "A-levels qualification",
+                        "prefix": "A-levels: Biology, Chemistry, Physics",
+                        "title": "Franklin College, Grimsby",
+                        "content": [
+                            "http://www.franklin.ac.uk/"
+                        ],
+                        "suffix": "(1997-1999)"
+                    },
+                    {
+                        "type": "link",
+                        "name": "GCSEs qualification",
+                        "prefix": "10 GCSEs ",
+                        "title": "Healing Comprehensive School, Grimsby",
+                        "content": [
+                            "http://www.healingssc.co.uk/"
+                        ],
+                        "suffix": "(1991-1997)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "employment",
+        "header": "Employment History",
+        "subheader": "",
+        "subsubheader": "",
+        "articles": [
+            {
+                "title": "Verne Global",
+                "items": [
+                    {
+                        "type": "headers",
+                        "name": "employer Verne Global header",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Platform Developer/Head of Platform Development",
+                        "content": [
+                            "2017 - present"
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "employer Verne Global website link",
+                        "prefix": null,
+                        "title": "Verne Global website",
+                        "content": [
+                            "https://www.verneglobal.com/"
+                        ],
+                        "suffix": null
+                    },
+                    {
+                        "type": "paragraphs",
+                        "name": "employer Verne Global summary",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": null,
+                        "content": [
+                            "At Verne Global I acted as architect and lead-developer to create a public-facing Sanic-/Flask- and angular 7-based system (portal and API) to interface with OpenStack and deploy clusters of bare metal nodes optimised for high-performance computing.",
+                            "An audit carried out by a third-party team of penetration testers stated that \"No serious findings were found and the application is well structured\".",
+                            "I designed the microserivces architecture, packaged with docker and hosted on Kubernetes, and the REST APIs used (including the public facing hpcDIRECT API)."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "name": "employer Verne Global skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Key skills acquired and achievements from this position",
+                        "content": [
+                            "Technologies used include Python 3, Flask, Sanic, Angular 7/8, Docker, Kubernetes, GKE, Vagrant, OpenStack, Git, GitHub/GitLab, Vagrant, Ansible, Kayobe, LibVirt, Netbox, Hashicorp Vault, RabbitMQ, SQLalchemy, Helm, PyTest, and Selenium Grid.",
+                            "As this was a greenfield project, I played a prominent role in selecting the technologies and tooling used, and in choosing setting up the infrastructure required. I also made a case for and specified the overall architecture, testing regime, policies, and procedures.",
+                            "I gathered requirements, wrote user-stories, and made design documents for the overall project and for each new microservice. I also gathered feedback and implemented requested features.",
+                            "Led a team of 1-2 front-end developers/designers (2 different contract developers and 1 contract designer).",
+                            "Liased with platform operations and networking staff, and coordinated sprint planning for my team.",
+                            "Evangelised the concepts of microservices, Test-Driven Development (TDD), code review, Continuous Integration (CI) and Delivery (CD), end-to-end testing and multiple environments to test upgrades prior to rollout.",
+                            "Set up prototype CI system using Jenkins and GitHub, and later assisted with migration to GitLab.",
+                            "Set up staging environments, including a virtualised OpenStack staging environment using Ansible and Vagrant.",
+                            "Wrote Python wrapper for Netbox API.",
+                            "GitOps/Infrastructure-as-code."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Bitposter",
+                "items": [
+                    {
+                        "type": "headers",
+                        "name": "employer Bitposter header",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Software Engineer",
+                        "content": [
+                            "2017"
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "employer Bitposter website link",
+                        "prefix": null,
+                        "title": "Bitposter website",
+                        "content": [
+                            "https://www.bitposter.co/"
+                        ],
+                        "suffix": null
+                    },
+                    {
+                        "type": "paragraphs",
+                        "name": "employer Bitposter summary",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": null,
+                        "content": [
+                            "At Bitposter, I created several admin pages and management commands to integrate and synchronise between their various microservices.",
+                            "Unfortunately, very shortly after starting, I was made redundant along with several others due to a much lower than expected investment round."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "name": "employer Bitposter skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Key skills acquired and achievements from this position",
+                        "content": [
+                            "Technologies used include Django REST Framework, MongoDB, Postgres, RabbitMQ, and Vagrant.",
+                            "Test driven development.",
+                            "Python Microservices."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Canonical",
+                "items": [
+                    {
+                        "type": "headers",
+                        "name": "employer Canonical header",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Software Engineer",
+                        "content": [
+                            "2014 - 2017"
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "employer Canonical website link",
+                        "prefix": null,
+                        "title": "Canonical website",
+                        "content": [
+                            "https://www.canonical.com/"
+                        ],
+                        "suffix": null
+                    },
+                    {
+                        "type": "paragraphs",
+                        "name": "employer Canonical summary",
+                        "title": null,
+                        "prefix": null,
+                        "suffix": null,
+                        "content": [
+                            "My role at Canonical was as a member of the OpenStack Interoperability Lab (OIL) team.",
+                            "OIL deploys thousands of OpenStack clouds per month, testing a variety of different combinations of hardware and software reporting on their interoperability, along with any bugs encountered."
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "OIL link",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "OpenStack Interoperability Lab (OIL) explained",
+                        "content": [
+                            "https://insights.ubuntu.com/2016/04/01/infographic-OpenStack-interoperability-lab-explained/"
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "name": "employer Canonical skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Key skills acquired and achievements from this position",
+                        "content": [
+                            "Technologies used include Python, Django, Javascript/AngularJS, NVD3, Postgres, Containers (LXC/LXD), Juju and MAAS.",
+                            "In January 2015, I was awarded a \"spotlight award\" for my efforts.",
+                            "I was the sole developer of tool a suite of automated bug-triaging and analysis tools (written in Python 2.7) for finding, collating and analysing OpenStack bugs, which has been in daily use in a production environment for two years, processing the results of millions of test cases.",
+                            "I was the initial and lead developer for the Django and AngularJS-based web dashboard used to monitor and present real-time and historical OIL status, including database, REST API and UI design and implementation (Django 1.7/Python 3/AngularJS 1/Tastypie).",
+                            "Maintained separate integration, staging and production environments with separate package repositories (PPAs and snaps).",
+                            "Strict adherence to code review, use of git and bzr with Launchpad and GitHub, and the use of merge proposals/pull requests.",
+                            "Packaged software as debs and snaps, and maintained several PPAs. Also developed and published a number of charms (for use with the Juju orchestration software)."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Turnitin (formerly IParadigms)",
+                "items": [
+                    {
+                        "type": "headers",
+                        "name": "employer Turnitin header",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Associate Quality/Automation Engineer",
+                        "content": [
+                            "2013 - 2014"
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "employer Turnitin website link",
+                        "prefix": null,
+                        "title": "Turnitin website",
+                        "content": [
+                            "https://www.turnitin.com/"
+                        ],
+                        "suffix": null
+                    },
+                    {
+                        "type": "paragraphs",
+                        "name": "employer Turnitin summary",
+                        "title": null,
+                        "prefix": null,
+                        "suffix": null,
+                        "content": [
+                            "My role at Turnitin was to automate the test coverage for their originality checking service."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "name": "employer Turnitin skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Key skills acquired and achievements from this position",
+                        "content": [
+                            "Writing new tests and porting old tests from Fitnesse into Python/Selenium-Webdriver.",
+                            "Co-developing the test framework and hardware architecture with the goal of supporting continuous deployment by providing a continuous testing environment.",
+                            "Was credited for greatly improved speed and vastly simplified configuration of the resulting test suite.",
+                            "Integrating the various internal- and external-facing APIs into the test framework.",
+                            "Working in tandem with US team (including line manager) from a UK based satellite office - effectively working remotely.",
+                            "Researching technologies and building selenium-grid/cloud prototypes with the objective of guiding the technical direction of the automation infrastructure."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Newcastle University",
+                "items": [
+                    {
+                        "type": "headers",
+                        "name": "employer Newcastle header",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Research Associate",
+                        "content": [
+                            "2009 - 2012"
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "employer Newcastle website link",
+                        "prefix": null,
+                        "title": "Newcastle University website",
+                        "content": [
+                            "https://www.newcastle.ac.uk/"
+                        ],
+                        "suffix": null
+                    },
+                    {
+                        "type": "paragraphs",
+                        "name": "employer Newcastle summary",
+                        "title": null,
+                        "prefix": null,
+                        "suffix": null,
+                        "content": [
+                            "My role as a post-doctoral research associate involved constructing three-dimensional computational models of developing cardiac cushions to enable morphometric analysis of mouse and human embryos."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "name": "employer Newcastle skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Key skills acquired and achievements from this position",
+                        "content": [
+                            "Morphometric and bioinformatic analyses using Python.",
+                            "Conducted video analysis and developed a tracking programme for non-technical users in MATLAB.",
+                            "Alignment and computational reconstruction of histological tissue sections into a 3D model using Amira."
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "Amira link",
+                        "prefix": null,
+                        "title": "Amira website",
+                        "content": [
+                            "http://www.amira.com/"
+                        ],
+                        "suffix": null
+                    }
+                ]
+            },
+            {
+                "title": "University of Sheffield",
+                "items": [
+                    {
+                        "type": "headers",
+                        "name": "employer Sheffield header",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "PhD in Computational Biology",
+                        "content": [
+                            "2005 - 2009"
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "employer Sheffield website link",
+                        "prefix": null,
+                        "title": "University of Sheffield website",
+                        "content": [
+                            "https://sheffield.ac.uk/"
+                        ],
+                        "suffix": null
+                    },
+                    {
+                        "type": "paragraphs",
+                        "name": "employer Sheffield summary",
+                        "title": null,
+                        "prefix": null,
+                        "suffix": null,
+                        "content": [
+                            "My PhD was concerned with building computational models of a class of neurons found within the basal ganglia."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "name": "employer Sheffield skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Key skills acquired and achievements from this position",
+                        "content": [
+                            "Use of Linux and of a computer cluster.",
+                            "LaTeX typesetting.",
+                            "Version control software (Mercurial, Subversion).",
+                            "Time management and organisational skills."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "GlaxoSmithKline Services",
+                "items": [
+                    {
+                        "type": "headers",
+                        "name": "employer GSK header",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Study Director/Monitor: Safety Pharmacology",
+                        "content": [
+                            "2002 - 2004"
+                        ]
+                    },
+                    {
+                        "type": "link",
+                        "name": "employer GSK website link",
+                        "prefix": null,
+                        "title": "GlaxoSmithKline Services website",
+                        "content": [
+                            "https://www.gsk.com/"
+                        ],
+                        "suffix": null
+                    },
+                    {
+                        "type": "paragraphs",
+                        "name": "employer GSK summary",
+                        "title": null,
+                        "prefix": null,
+                        "suffix": null,
+                        "content": [
+                            "Study director and monitor for drug safety assessment studies within the Safety Pharmacology department at GlaxoSmithKline Services."
+                        ]
+                    },
+                    {
+                        "type": "list",
+                        "name": "employer GSK skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "Key skills acquired and achievements from this position",
+                        "content": [
+                            "Extensive planning and documentation required to comply with strict regulatory guidelines.",
+                            "Interacting with contract research organisations to deliver studies on schedule."
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "section": "skills",
+        "header": "Skill Set",
+        "subheader": "",
+        "subsubheader": "",
+        "articles": [
+            {
+                "title": "Python",
+                "items": [
+                    {
+                        "type": "list",
+                        "name": "Python skill example list",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "",
+                        "content": [
+                            "hpcDIRECT portal: Use of Python 3.6 and Flask (later ported to Sanic) to produce a collection of 17 containerised microservices, managed by kubernetes, for an API-driven customer portal and internal admin dashboard to deploy and monitor clusters of bare-metal compute nodes.",
+                            "OIL dashboard: Use of Python 3.5 and Django 1.7 to produce a dashboard for monitoring the current status of OIL and view historical results. This was adopted to become the main portal for QA's results and was used by the whole company, including C-level senior management, and was used to plan business decisions.",
+                            "Automated bug triaging: Designed and built a tool to parse OpenStack logs, normalise and analyse logs, and compare against known regular expressions to determine if a bug had been filed, and if not to determine how many test runs were hitting the new bug.",
+                            "Quality Assurance: Use of Python 2.7 (with Pytest and Python-Webdriver) to design and build an object-oriented test automation framework to automate the test coverage for the Turnitin SAAS platform.",
+                            "Morphometric Analysis: During my post-doctoral research position, I used Python to perform an analysis of the morphology of arbitrarily shaped three-dimensional anatomical structures.",
+                            "Bioinformatics: Using biopython, I performed a basic analysis of next-generation genomic sequencing data as a side-project for a Professor of genetics.",
+                            "Other Projects: In 2012, as a side project, I worked on a project to visualise complex financial packages as simple charts for a local financial investment company."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "APIs",
+                "items": [
+                    {
+                        "type": "list",
+                        "name": "APIs skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "",
+                        "content": [
+                            "API design: I have planned, designed, built and tested many secure, RESTful APIs. These have been used internally and by customers, both directly as well as via front-end javascript dashboards and portals. To do so, I have used Flask, Sanic, and Django (Tastypie).",
+                            "Swagger (OpenAPI): Extensive use of Swagger to use, document and test internal and external APIs.",
+                            "Django REST Framework: I have used DRF on personal projects and during my time at Bitposter.",
+                            "APIs: Integrated internal- and external-facing SOAP and REST APIs into the test framework at Turnitin.",
+                            "Client: Have written Python wrappers around both SOAP and REST APIs.",
+                            "JenkinsAPI: Have written software that interacts heavily with Jenkins via it's API."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Javascript",
+                "items": [
+                    {
+                        "type": "list",
+                        "name": "Javascript skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "",
+                        "content": [
+                            "Angular: Set up, contributed to and managed the development of a portal written in Angular7.",
+                            "AngularJS: Web dashboard in AngularJS.",
+                            "NVD3: I used the angular-nvd3 npm library to convey information on test run data in simple and attractive, interactive charts."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Leadership",
+                "items": [
+                    {
+                        "type": "list",
+                        "name": "Leadership skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "",
+                        "content": [
+                            "Management: In my role as Head of Platform Development at Verne Global, I managed a team and planned work on their behalf for each sprint, in addition to other administrative tasks.",
+                            "Collaboration: In my role at GlaxoSmithKline, I acted as the director and monitor for several drug safety assessment studies, which involved coordinating with external contracted organisations to ensure delivery on time and in compliance with regulatory bodies. This involved managing scientists based at external contract research organisations via email and telephone."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Test Automation",
+                "items": [
+                    {
+                        "type": "list",
+                        "name": "Test Automation skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "",
+                        "content": [
+                            "Selenium 2.0: Co-developed test framework and suite of tests to test large scale web applications based on Webdriver with Python bindings and Selenium Grid. Tests were written to follow the `Page Object' pattern and to be isolated, reusable, succinct and clear.",
+                            "Fitnesse-Webdriver Ports: Several existing tests were converted from Fitnesse into Python/Webdriver.",
+                            "Jenkins: Have managed several Jenkins servers in multiple roles."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Other Technical Skills",
+                "items": [
+                    {
+                        "type": "list",
+                        "name": "Other Technical skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "",
+                        "content": [
+                            "Ansible: Have written ansible playbooks and interfaced with portal to manage and monitor.",
+                            "Kubernetes, Docker and Helm: Have written Helm charts and gitlab-ci pipeline files to deploy microservices in Docker containers on Kubernetes.",
+                            "Juju: Built a layered-charm to be deployed via Juju (Canonical's modelling tool used to deploy, configure, scale and operate your software on public and private clouds).",
+                            "Agile practices: e.g. test automation, daily stand-ups (local and remote), continuous integration, code reviews, refactoring, version control.",
+                            "Linux: Familiarity with GNU/Linux and experience with common command ­line tools, shell scripting and server technologies.",
+                            "MATLAB: Used during PhD to develop an automated fitting tool for optimising unconstrained parameter values of a model neuron, run on a computer cluster. Also used during postdoc for cell tracking analysis.",
+                            "Java (JSP): Learned formally during MSc and have used to build a few simple android apps. I used JSP to build a virtual learning environment (VLE) for MSc dissertation.",
+                            "Postgres: Used Postgres 9.4 as database for web dashboard and wrote tools to backup, restore and synchronise the database which were integrated into Juju charms.",
+                            "SQLalchemy + Alembic: Have used SQLalchemy to interface with postgres, mariadb, and sqlite3 databases. Use of Alembic withing Flask/Sanic applicatiosn to manage migrations.",
+                            "Version Control: Have used git, bzr, hg, and svn extensively."
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Remote/Independent Working",
+                "items": [
+                    {
+                        "type": "list",
+                        "name": "Remote/Independent Working skills",
+                        "prefix": null,
+                        "suffix": null,
+                        "title": "",
+                        "content": [
+                            "Remote working:  I have found that I am able to work effectively from a remote location, with a geographically distributed team. My positions at Verne Global, Canonical and Bitposter involved working completely remotely from a home-based office. I have used Slack, IRC, email, Google Hangouts, and Skype to effectively handle working with people spread across multiple time zones.",
+                            "Travel: At Canonical, I regularly attended \"sprints\" and attended conferences held in various locations throughout the world, lasting for a week or more.",
+                            "Self-motivation/organisation: In addition to a proven track record of working remotely, I have also successfully set and met goals and deadlines for various research projects, including PhD project and thesis write-up. I accept and handle responsibility well. I have been praised on my initiative and have much experience working without direct supervision. I have a tendency to document as much as possible for later use."
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+]
