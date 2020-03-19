@@ -1,0 +1,72 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+backups/*
+
+__pycache__
+venv
+*.swp
+*.pyc
+private.cfg
+private.env
+init.sql
+init2.sql
+demo.sl3
+.cache
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.idea
+.coverage
+.pytest_cache
+.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+XDG_CACHE_HOME
+
+# misc
+/.sass-cache
+/connect.lock
+/test_reports/*
+/cypress-e2e/videos
+/cypress-e2e/screenshots
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+/docs
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+geckodriver.log
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Dotenv config file
+.env
+
+# Config and test user files
+config.json
