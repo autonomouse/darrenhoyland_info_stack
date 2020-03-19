@@ -7,8 +7,7 @@ from flask import Flask, jsonify
 
 
 app = Flask(__name__)
-
-# breakpoint()
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = False
 
 def getJSON(filename):
     with open(f"{Path(__file__).parent}/{filename}.json", 'r') as f:
@@ -20,4 +19,3 @@ def resume():
     response = jsonify(return_value)
     response.status_code = 200
     return response
-
