@@ -2,8 +2,8 @@
 
 # install git
 sudo apt update
-sudo apt upgrade -y
 sudo apt install -y git
+sudo apt remove docker
 
 # install latest version of docker the lazy way
 curl -sSL https://get.docker.com | sh
@@ -18,8 +18,8 @@ sudo mkdir /srv/docker
 sudo git clone https://github.com/autonomouse/darrenhoyland_info_stack.git /srv/docker
 
 # install docker-compose
-curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.25.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
 # start up the application via docker-compose
 docker-compose -f /srv/docker/docker-compose.yml up -d
