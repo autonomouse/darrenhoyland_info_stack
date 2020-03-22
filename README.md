@@ -12,3 +12,7 @@ Deployment method swiped from  https://github.com/mikegcoleman/todo (https://www
         chmod +x ./lightsail.sh
 
         ./lightsail.sh
+
+### Local Deployment via Docker-compose
+
+        docker-compose up
