@@ -76,16 +76,9 @@ echo "After=network.target" >> $TMP_TARGET
 echo "" >> $TMP_TARGET
 echo "[Service]" >> $TMP_TARGET
 echo "PermissionsStartOnly = true" >> $TMP_TARGET
-# echo "PIDFile = /run/$APP/$APP.pid" >> $TMP_TARGET
 echo "User = $APP" >> $TMP_TARGET
 echo "Group = $APP" >> $TMP_TARGET
 echo "WorkingDirectory = $SRV/$APP" >> $TMP_TARGET
-# echo "ExecStartPre = /bin/mkdir /run/$APP" >> $TMP_TARGET
-# echo "ExecStartPre = /bin/chown -R $APP:$APP /run/$APP" >> $TMP_TARGET
-# echo "ExecStart = /usr/bin/env $GUNICORNCMD --pid /run/$APP/$APP.pid" >> $TMP_TARGET
-# echo "ExecReload = /bin/kill -s HUP $MAINPID" >> $TMP_TARGET
-# echo "ExecStop = /bin/kill -s TERM $MAINPID" >> $TMP_TARGET
-# echo "ExecStopPost = /bin/rm -rf /run/$APP" >> $TMP_TARGET
 echo "ExecStart = /usr/bin/env $GUNICORNCMD" >> $TMP_TARGET
 echo "PrivateTmp = true" >> $TMP_TARGET
 
@@ -103,6 +96,3 @@ systemctl start $APP.service
 printf '============================= Obtaining service status =========================== \n'
 
 systemctl status $APP.service
-
-echo GUNICORNCMD
-$GUNICORNCMD
