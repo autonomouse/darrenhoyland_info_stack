@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 
+APP="api"
+
+
 printf '======================= Changing user and seeting vars ========================== \n'
 
 sudo su
@@ -32,7 +35,7 @@ apt update
 apt install --fix-missing -y build-essential $PYTHON python3-distutils libssl-dev \
 zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
 libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git python3-pip \
-gunicorn
+gunicorn3
 python3 -m pip install -U pip
 
 
@@ -61,7 +64,7 @@ $POETRY config virtualenvs.create false
 printf '========================= Setting up the Application ============================ \n'
 
 $POETRY install -n
-GUNICORNCMD='gunicorn --config '$APP'/gunicorn.conf --bind ":'$PORT' '$APP'.App:app"'
+GUNICORNCMD='gunicorn3 --config gunicorn.conf --bind ":'$PORT'" '$APP'.App:app'
 
 
 printf '=========================== Creating Systemd service ============================= \n'
@@ -79,7 +82,7 @@ echo "PermissionsStartOnly = true" >> $TMP_TARGET
 echo "PIDFile = /run/$APP/$APP.pid" >> $TMP_TARGET
 echo "User = $APP" >> $TMP_TARGET
 echo "Group = $APP" >> $TMP_TARGET
-echo "WorkingDirectory = $SRV" >> $TMP_TARGET
+echo "WorkingDirectory = $SRV/$APP" >> $TMP_TARGET
 echo "ExecStartPre = /bin/mkdir /run/$APP" >> $TMP_TARGET
 echo "ExecStartPre = /bin/chown -R $APP:$APP /run/$APP" >> $TMP_TARGET
 echo "ExecStart = /usr/bin/env $GUNICORNCMD --pid /run/$APP/$APP.pid" >> $TMP_TARGET
