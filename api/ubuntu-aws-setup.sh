@@ -1,30 +1,67 @@
 #!/usr/bin/env bash
 
+
+printf '======================= Changing user and seeting vars ========================== \n'
+
+sudo su
+
 SRV="/opt/stack"
 APP="api"
 PORT="8000"
 DESCRIPTION="API microservice"
 POETRYURL="https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py"
+PYENVURL="https://pyenv.run"
 STACKURL="https://github.com/autonomouse/darrenhoyland_info_stack.git"
+PYVERS_MAJOR=3
+PYVERS_MINOR=7
+PYVERS_PATCH=5
+PYVERSION=$PYVERS_MAJOR.$PYVERS_MINOR.$PYVERS_PATCH
+PYTHON="python"$PYVERS_MAJOR.$PYVERS_MINOR
 
 
 printf '=========================== Cloning the Repository ============================== \n'
 
-sudo mkdir -p $SRV
-sudo git clone $STACKURL $SRV
-cd $APP
+mkdir -p $SRV
+git clone $STACKURL $SRV
+cd $SRV/$APP
 WD=`pwd`
+
+printf '============================= Apt/Pip Installing ================================ \n'
+
+apt update
+apt install --fix-missing -y build-essential $PYTHON python3-distutils libssl-dev \
+zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev \
+libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python-openssl git python3-pip \
+gunicorn
+python3 -m pip install -U pip
+
+
+printf '=============================== Getting PyEnv ================================== \n'
+
+curl $PYENVURL | bash
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+pyenv update
+if [ ! -d "$HOME/.pyenv/versions/$PYVERSION" ]; then
+    pyenv install $PYVERSION;
+fi
+
 
 printf '=============================== Getting Poetry ================================== \n'
 
-curl -sSL $POETRYURL | python3
-$HOME/.poetry/bin/poetry config virtualenvs.create false
+pyenv local $PYVERSION
+curl -sSL $POETRYURL | $PYTHON
+POETRY=$HOME/.poetry/bin/poetry
+sed -i 's/python$/python3/g' $POETRY  # Nasty hack, but hey...
+$POETRY self update
+$POETRY config virtualenvs.create false
 
 
 printf '========================= Setting up the Application ============================ \n'
 
-$HOME/.poetry/bin/poetry install -n
-GUNICORNCMD='gunicorn --config gunicorn.conf --bind ":'$PORT' '$APP'.App:app"'
+$POETRY install -n
+GUNICORNCMD='gunicorn --config '$APP'/gunicorn.conf --bind ":'$PORT' '$APP'.App:app"'
 
 
 printf '=========================== Creating Systemd service ============================= \n'
@@ -51,17 +88,22 @@ echo "ExecStop = /bin/kill -s TERM $MAINPID" >> $TMP_TARGET
 echo "ExecStopPost = /bin/rm -rf /run/$APP" >> $TMP_TARGET
 echo "PrivateTmp = true" >> $TMP_TARGET
 
-sudo mv $TMP_TARGET $TARGET
-sudo chmod 755 $TARGET
-sudo systemctl enable $APP.service
-sudo systemctl daemon-reload
+mv $TMP_TARGET $TARGET
+chmod 755 $TARGET
+systemctl enable $APP.service
+systemctl daemon-reload
+
+
+printf '================================ Changing user ================================== \n'
+
+exit
 
 
 printf '============================= Starting the service =============================== \n'
 
-sudo systemctl start $APP.service
+systemctl start $APP.service
 
 
 printf '============================= Obtaining service status =========================== \n'
 
-sudo systemctl status $APP.service
+systemctl status $APP.service
