@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
 
-APP="api"
-
-
 printf '======================= Changing user and seeting vars ========================== \n'
 
 sudo su
@@ -97,11 +94,6 @@ systemctl enable $APP.service
 systemctl daemon-reload
 
 
-printf '================================ Changing user ================================== \n'
-
-exit
-
-
 printf '============================= Starting the service =============================== \n'
 
 systemctl start $APP.service
@@ -110,3 +102,4 @@ systemctl start $APP.service
 printf '============================= Obtaining service status =========================== \n'
 
 systemctl status $APP.service
+
