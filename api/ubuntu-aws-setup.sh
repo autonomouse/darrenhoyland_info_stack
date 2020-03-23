@@ -24,7 +24,7 @@ $HOME/.poetry/bin/poetry config virtualenvs.create false
 printf '========================= Setting up the Application ============================ \n'
 
 $HOME/.poetry/bin/poetry install -n
-GUNICORNCMD='gunicorn --config gunicorn.conf --bind ":$PORT $APP.App:app"'
+GUNICORNCMD='gunicorn --config gunicorn.conf --bind ":'$PORT' '$APP'.App:app"'
 
 
 printf '=========================== Creating Systemd service ============================= \n'
