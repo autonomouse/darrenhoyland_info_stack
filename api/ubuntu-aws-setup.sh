@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 
-printf '======================= Changing user and seeting vars ========================== \n'
+printf '======================= Changing user and setting vars ========================== \n'
 
 sudo su
 
