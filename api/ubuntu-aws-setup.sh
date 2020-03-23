@@ -103,4 +103,5 @@ printf '============================= Obtaining service status =================
 
 systemctl status $APP.service
 
+echo GUNICORNCMD
 $GUNICORNCMD
